@@ -27,3 +27,4 @@ int stringSize(self)
     }
     return i;
 }
+// Reverse using the index [max - i] and don't forget to ignore termination string and then add at end.
