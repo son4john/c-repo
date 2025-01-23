@@ -10,22 +10,25 @@ int stringSize(self)
     return i;
 }
 
-// Reverse using the index [max - i] and don't forget to ignore termination string and then add at end.
 void reverserUtility(int size, char *array){
-    printf("Important Part of Program");
+    printf("String Reversed: ");
+    int j;
+    for(j=size - 1; j >= 0; j--){
+        printf("%c", array[j]);
+    }
+    printf("\n");
 }
 
 void reverseArray(char *array){
     int size;
     printf("The word is: %s\n",array);
     size = stringSize(array);
-    printf("\nSize: %d\n",size);
+    printf("Size: %d\n",size);
     reverserUtility(size,array);
 }
 
-
 int main(){
-    char word[] = "food";
+    char word[] = "Johnson";
 	reverseArray(word);
 }
 
