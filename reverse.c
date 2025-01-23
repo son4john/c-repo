@@ -1,22 +1,4 @@
 #include <stdio.h>
-int main(){
-	int reverser();
-	int status;
-	status = reverser("word");
-}
-
-int reverser(self)
-    char self[];
-{
-	int stringSize();
-    int size;
-    
-    size = stringSize(self);
-    printf(self);
-    printf("\nSize: %d\n",size);
-
-	return 0;
-}
 
 int stringSize(self)
     char self[];
@@ -27,4 +9,25 @@ int stringSize(self)
     }
     return i;
 }
+
 // Reverse using the index [max - i] and don't forget to ignore termination string and then add at end.
+void reverserUtility(int size, char *array){
+    printf("Important Part of Program");
+}
+
+void reverseArray(char *array){
+    int size;
+    printf("The word is: %s\n",array);
+    size = stringSize(array);
+    printf("\nSize: %d\n",size);
+    reverserUtility(size,array);
+}
+
+
+int main(){
+    char word[] = "food";
+	reverseArray(word);
+}
+
+
+
