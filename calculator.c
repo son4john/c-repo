@@ -1,13 +1,24 @@
+#include<stdio.h>
+#include"matrix.h"
+
 // Not Tested
-int main{
+
+int main(){
     int a = 0;
     int b = 5;
     int c = 3;
     int d = 2;    
     int anwser;
 
+    struct mat3 ypr;
+    ypr.x = 1;
+    ypr.y = 2;
+    ypr.z = 3;
+
     anwser = addition(b,c);
-    printf("Add %d\n", awnser);
+    printf("Add: %d\n", anwser);
+
+    printf("mat3 z component: %d\n ", ypr.z);
 }
 
 int addition(int num1, int num2){
