@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include"matrix.h"
+#include"area.c"
 
 // Not Tested
 
@@ -19,6 +20,12 @@ int main(){
     printf("Add: %d\n", anwser);
 
     printf("mat3 z component: %d\n ", ypr.z);
+
+    anwser = square(b,c);
+    printf("area of square: %d\n", anwser);
+
+    anwser = octagon(b);
+    printf("area of square: %d\n", anwser);
 }
 
 int addition(int num1, int num2){
